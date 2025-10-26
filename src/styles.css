@@ -1,0 +1,109 @@
+:root {
+  --lemon-yellow: #fff700;
+  --dark-green: #2a4d32;
+  --light-green: #a3b18c;
+  --white: #ffffff;
+  --bg-green: #1b3a2a;
+  --light-gray: #f4f4f4;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-green);
+  color: var(--white);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* центриране хоризонтално */
+  justify-content: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+/* Заглавие */
+h2 {
+  text-align: center;
+  color: var(--lemon-yellow);
+  margin-bottom: 30px;
+}
+
+/* Форма */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* центриране на всички полета */
+  background-color: var(--light-green);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  max-width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%; /* еднаква ширина за всички полета и бутона */
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form input,
+form textarea {
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: var(--lemon-yellow);
+  color: var(--dark-green);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--dark-green);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.status {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
